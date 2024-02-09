@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: verify-enterprise-contract-task
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/jstuart/verify-enterprise-contract-task@sha256:11db41bf15c97e3c281aa6618178fa3398e13726e1cad6dac7d7fb1da22e7247
         name: my-go
         ports:
         - containerPort: 8081
