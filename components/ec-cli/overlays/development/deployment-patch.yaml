@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ec-cli
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jstuart/ec-cli@sha256:7f9323bb7f0086bd26352f4c3c6f76deb067c7c69a0f102de1c7409b0605a4f1
+        name: container-image
+        resources: {}
+status: {}
